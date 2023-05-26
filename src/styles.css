@@ -1,0 +1,9 @@
+/* Add application styles & imports to this file! */
+@import '~@ionic/angular/css/ionic.bundle.css';
+
+ion-content:hover {
+  cursor: default;
+}
+.botao:hover {
+  cursor: grab;
+}

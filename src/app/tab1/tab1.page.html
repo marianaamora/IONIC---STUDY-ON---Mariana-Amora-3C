@@ -1,0 +1,49 @@
+<ion-content class="ion-padding">
+  <div class="logo">
+    <img
+      src="https://www.imagemhost.com.br/images/2023/05/23/logo-app.png"
+      alt="logo-app.png"
+    />
+  </div>
+
+  <ion-grid class="ion-align-items-center">
+    <ion-row>
+      <ion-col size="12" class="ion-justify-content-center">
+        <ion-card>
+          <ion-card-header>
+            <h2>Nova Conta</h2>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-label position="floating">Nome</ion-label>
+              <ion-input type="text" [(ngModel)]="nome"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">E-mail</ion-label>
+              <ion-input type="email" [(ngModel)]="email"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">Criar Senha</ion-label>
+              <ion-input type="password" [(ngModel)]="senha"></ion-input>
+            </ion-item>
+
+            <ion-button expand="block" [routerLink]="['/tabs/tab2']"
+              >Criar Conta</ion-button
+            >
+            <ion-label>
+              Ao criar sua conta, você está de acordo com os
+              <span class="underline">Termos de Serviço</span>.
+            </ion-label>
+            <br />
+            <ion-label>
+              Já tem uma conta?
+              <span class="underline">ENTRAR</span>.
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

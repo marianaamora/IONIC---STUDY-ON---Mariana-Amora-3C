@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+ion-content {
+  position: relative;
+  height: 100%;
+  --background: #1675f2;
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    padding-bottom: 20px;
+
+    img {
+      width: 250px; /* Ajuste o tamanho conforme necessário */
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    ion-item {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+
+  ion-grid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+
+    ion-card {
+      padding: 20px;
+      text-align: center;
+      height: 550px;
+      border-radius: 20px;
+      margin-top: 40px;
+      --background: #cedef2;
+
+      ion-card-header h2 {
+        color: #1675f2;
+        font-weight: 600;
+        margin-bottom: 20px;
+        font-size: 30px;
+      }
+
+      ion-item {
+        margin-bottom: 30px;
+        --border-width: 2px;
+        border-radius: 30px;
+        overflow: hidden;
+        box-shadow: 0 0 0 2px #1675f2;
+      }
+
+      ion-input.caixa {
+        --placeholder-color: blue;
+        --placeholder-opacity: 0.8;
+        --border-color: navy;
+        --border-style: solid;
+        --border-width: 2px;
+        --background: white;
+      }
+
+      ion-button {
+        --padding-end: 10px;
+        --padding-start: 10px;
+        margin-bottom: 10px;
+      }
+      ion-label {
+        color: #212121;
+        span.underline {
+          text-decoration: underline;
+          color: navy;
+        }
+      }
+    }
+  }
+}
